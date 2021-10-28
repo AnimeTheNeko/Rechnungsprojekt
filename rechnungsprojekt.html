@@ -1,0 +1,69 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Rechnungsprojekt</title>
+  <style>
+    img { border: 2px solid blue;
+          border-radius: 10px;
+          width: 100%;
+        }
+    button { width: 10em;
+             height: 5em;
+           }
+  </style>
+</head>
+
+<body>
+
+<img src="bild-hauptformular.png">
+<hr>
+<center>
+  <form method="POST">
+    <table >
+      <tr>
+        <td>
+          <button type="submit" >Neuen Kunden <br> aufnehmen</button>
+        </td>
+        <td>
+          <button type="submit" >Kundendaten editieren</button>
+        </td>
+        <td>
+          <button type="submit" formaction="kundennummer-suchen.html" formtarget="_blank">
+            Kundennummer suchen
+          </button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <button type="submit" >Neues Produkt <br> aufnehmen</button>
+        </td>
+        <td>
+          <button type="submit" >Produktdaten editieren</button>
+        </td>
+        <td>
+          <button type="submit" >Produktnummer <br> suchen</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button type="submit" formaction="rechnung.html" formtarget="_blank">
+            Rechnung erstellen oder anzeigen
+          </button>
+        </td>
+        <td>
+          <button type="submit" >Rechnung suchen nach <br> Datum</button>
+        </td>
+        <td>
+          <button type="submit" >
+            Rechnung suchen nach <br> Kundennummer
+          </button>
+        </td>
+      </tr>
+    </table>
+    <hr>
+  </form>
+</center>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Rechnung erstellen</title>
+</head>
+
+<body>
+
+<form method="POST" action="rechnung-anzeigen.php" target="_blank">
+  <h4>Rechnung anzeigen</h4>
+  <pre>
+    <label for="knr">Rechnungsnummer: </label>
+    <input type="text" name="rnr"><br>
+    <input type="submit" name="anzeigen" value="Rechnung anzeigen">
+  </pre>
+</form>
+<hr>
+<form method="POST" action="rechnung-erstellen.php" target="_blank">
+  <h4>Neue Rechnung erstellen</h4>
+  <pre>
+    <label for="knr">Kundennummer: </label>
+    <input type="text" name="knr"><br>
+    <input type="submit" name="erstellen" value="Rechnung erstellen">
+  </pre>
+</form>
+
+</body>
+</html>
