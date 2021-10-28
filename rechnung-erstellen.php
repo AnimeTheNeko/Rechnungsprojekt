@@ -8,17 +8,14 @@
     <?php
       $knr=$_POST["knr"];
       if ($knr == "") die("Keine kunden nummer eingegeben");
-
+      $datum = date(Y-m-d);
       $host = "localhost";
       $user = "root";
       $password = "";
       $db = "rechnungsprojekt";
       $verbindung = mysqli_connect($host,$user,$password,$db) or die("Verbindungsfehler!");
-
-      $abfrage = "select * from kunde where knr = '$knr'";
-
+      $abfrage = "INSERT INTO rechnung (datum) VALUES('$datum')";
       $ergebnis = mysqli_query($verbindung, $abfrage) or die("Abfragefehler!");
-      $daten[] = $ergebnis;
 
 
 
